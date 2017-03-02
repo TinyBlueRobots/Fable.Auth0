@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "auth0-lock": "^10.11.0",
+    "fable-arch": "^0.10.1",
+    "fable-compiler": "^0.7.48",
+    "fable-core": "^0.7.28",
+    "fable-powerpack": "^0.0.20",
+    "source-map-loader": "^0.1.6",
+    "virtual-dom": "^2.1.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/fable -d fableconfig.json",
+    "watch": "node_modules/.bin/fable -w -d fableconfig.json",
+    "start": "node_modules/.bin/webpack-dev-server --content-base public"
+  }
+}

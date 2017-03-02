@@ -1,0 +1,18 @@
+{
+  "projFile": "./App.fsx",
+  "sourceMaps": true,
+  "outDir": "out",
+  "targets": {
+    "debug": {
+      "scripts": {
+        "postbuild": "node_modules/.bin/webpack"
+      }
+    },
+    "production": {
+      "sourceMaps": false,
+      "scripts": {
+        "postbuild": "node_modules/.bin/webpack -p"
+      }
+    }
+  }
+}
